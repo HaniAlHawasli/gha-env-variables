@@ -27,7 +27,7 @@ jobs:
         run: npm ci
       - name: Run server
         # starts the web server
-        run: npm start & npx wait-on http://127.0.0.1:$env:PORT
+        run: npm start & npx wait-on http://127.0.0.1:$PORT
       - name: Run tests
         run: npm test
       - name: Output information
@@ -40,4 +40,4 @@ jobs:
       - name: Output information
         run: |
           echo "MONGODB_USERNAME: ${{env.MONGODB_USERNAME}}"
-          echo "@env:MONGODB_DB_NAME"
+          echo "$MONGODB_DB_NAME"
