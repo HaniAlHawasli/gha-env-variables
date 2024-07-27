@@ -14,7 +14,7 @@ jobs:
       MONGODB_USERNAME: hanialhawasli93
       MONGODB_PASSWORD: nBiTLra6rIdwIAT8
       PORT: 8080
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get Code
         uses: actions/checkout@v3
